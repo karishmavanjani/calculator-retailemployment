@@ -21,7 +21,7 @@ html, body {
 
 .container {
     /* font-family: "Open Sans", sans-serif; */
-    /* color: #404040; */
+    color: #404040;
     /* font-family: "open sans"; */
     font-family: georgia, "times new roman", times, serif;
     font-size: 15px;
@@ -73,6 +73,7 @@ hr {
     border-style: inset;
     border-width: 1px;
     color: #BDBFBF;
+    color: black;
 }
 
 #resetbutton {
