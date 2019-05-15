@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Retail Store Closures</title>
+    <link rel="icon" href="Images/website.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+
+
+      <hr>
+      <div class="intro">
+        <p><b>Check out the retail carnage* </b> </p>
+        <p> Do you visit your retail stores in person? Enter the number of times you shopped at these chains and we will tell you how many workers (blue and white collared) in different stores will be losing their jobs in the coming years. </p>
+      </div>
+
+      </hr>
+
+      <form action="myphp.php" method="post">
+        <table>
+          <tr class="item" data-jobs="18000" data-stores="2500">
+            <td><img src="Images/payless.jpg" /></td>
+            <td><input class="user_visited" type="number"></td>
+            <td class="pre_total"><span></span></td>
+          </tr>
+          <tr class="item" data-jobs="8700" data-stores="94">
+            <td> <img src="Images/CharlotteRusse.jpg" /></td>
+            <td><input class="user_visited" type="number"></td>
+            <td class="pre_total"><span></span></td>
+          </tr>
+          <tr class="item" data-jobs="9600" data-stores="805">
+            <td><img src="Images/gymboree.jpg" /></td>
+            <td><input class="user_visited" type="number"></td>
+            <td class="pre_total"><span></span></td>
+          </tr>
+          <tr class="item" data-jobs="2496" data-stores="251">
+            <td><img src="Images/shopko.jpg" /></td>
+            <td><input class="user_visited" type="number"></td>
+            <td class="pre_total"><span></span></td>
+          </tr>
+          <tr class="item" data-jobs="40000" data-stores="72">
+            <td><img src="Images/sears.png" /></td>
+            <td><input class="user_visited" type="number"></td>
+            <td class="pre_total"><span></span></td>
+          </tr>
+        </table>
+        <div class="superscript">
+          <p>* Values are a loose estimate and are based on individual press releases by companies
+          </p>
+        </div>
+        <div class="total" disabled="disabled">
+          <span></span>
+        </div>
+        <hr />
+        <div class="resetbutton">
+          <input type="reset" value="Reset" id="resetbutton" />
+        </div>
+      </form>
+
+
+
+
+      <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Your javascript should be called here -->
+      <script src="main.js"></script>
+  </body>
+
+</html>
